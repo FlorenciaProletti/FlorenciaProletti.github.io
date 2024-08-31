@@ -5,8 +5,6 @@
     border: 0;
 }
 
-
-
 h1  {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -15,9 +13,7 @@ h1  {
     font-size: 95px;
     text-align: left; /* Alinea el texto horizontalmente dentro del h1 */
     color: rgb(255, 255, 255);
- 
-    ;
-}
+  }
 
 h3 {font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -45,7 +41,11 @@ p { font-family: "Lora", serif;
     font-weight: 400;}
 
 
+#sobremi {
+  padding: 14%;
+  text-align: justify;
 
+}
 
 #fotoperfil {
         border-radius: 50%;
@@ -53,7 +53,6 @@ p { font-family: "Lora", serif;
         display: block;
         margin: auto;
     }
-
 
 #button-23 {
   border: 1px solid #ffffff;
@@ -80,15 +79,13 @@ p { font-family: "Lora", serif;
   width: auto;
 }
 
-
-
 .encabezado {
     background-image: url(header4.jpg);
     display: block;
     background-position: right;
     background-position: bottom;
-    width: 1400px;    
-height: 500px;
+    width: 100%;    
+height: 100%;
     padding-left: 8%;
     padding-top: 8%;
     padding-bottom: 8%;
@@ -121,11 +118,19 @@ height: 500px;
 }
 
 
-div.galerycontenedor {
-    margin-left: 8% ;
-    margin-top: 30px;
-   }
+.gallerycontainer {
+  width: 100%;
+  justify-content: center;
+   display: flex;
+  background-color: rgb(255, 255, 255);
 
+
+
+}
+ 
+#galeriacompleta {
+  padding: 5% 0;
+}
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
@@ -146,7 +151,7 @@ div.gallery {
     padding: 15px;
     text-align: center;
     font-family:  "Lora", serif ;
-    color: #ffffff;
+    color: #3f246b;
   }
 
   p.descripcion {
@@ -163,9 +168,11 @@ div.gallery {
     background-image: url(ILUSTRACION\ portada\ 2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width:auto;
-    height: 600px;
+
+    height: 25%;
    padding-top:8%;
+   padding-bottom:8%;
+
 
  }
 
@@ -196,5 +203,31 @@ text-align: center;
  }
   
   
+@media (min-width: 768px) and (orientation:portrait){
 
+
+
+  h1 {
+  width: 75%;
+  font-size: 9em;
+  padding: 0;
+  padding-left: 7%;
+  padding-top: 12%;
+
+}
+
+#h3header {
+    padding-left: 7%;
+    padding-bottom: 12% ;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+
+  #sobremi {
+    padding: 14% 0;
+    text-align: justify;
+  }
+}
   
